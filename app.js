@@ -22,8 +22,11 @@ function bigContainerFiller(idx) {
   water.style.borderRadius = "0px";
   const waterRemainedValue = 2 - (current*0.25)
   remainedWater.textContent =  waterRemainedValue
+
   if (waterRemainedValue === 0){
       remainedWater.parentNode.style.display = 'none'
+  }else{
+    remainedWater.parentNode.style.display = 'block'
   }
   
   drankWater.textContent = `${current*0.25} L`
